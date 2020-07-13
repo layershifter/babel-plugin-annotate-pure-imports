@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-annotate-pure-imports",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "description": "A plugin that allows to annotate imported paths as pure to avoid side-effects for Terser.",
   "engines": {
     "node": ">=10"
