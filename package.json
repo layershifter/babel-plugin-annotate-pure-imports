@@ -1,0 +1,38 @@
+{
+  "name": "babel-plugin-annotate-pure-imports",
+  "version": "1.0.0-0",
+  "description": "A plugin that allows to annotate imported paths as pure to avoid side-effects for Terser.",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "lib/plugin.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps inline --extensions .ts,.tsx",
+    "pretest": "tsc --noEmit",
+    "prerelease": "yarn build",
+    "release": "release-it",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/helper-annotate-as-pure": "^7.10.4",
+    "@babel/types": "^7.10.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel-jest": "^26.1.0",
+    "babel-plugin-tester": "^9.2.0",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "release-it": "^13.6.4",
+    "typescript": "^3.9.6"
+  }
+}
