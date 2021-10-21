@@ -17,6 +17,10 @@
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/layershifter/babel-plugin-annotate-pure-imports.git"
+  },
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.10.4",
